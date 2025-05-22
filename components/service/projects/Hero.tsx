@@ -9,7 +9,7 @@ const Hero = () => {
             <img src="/images/work1.webp" alt="展示圖片" className="w-full h-full object-cover" />
           </div>
 
-          <div className=" h-[626px] bg-black position absolute top-[150px] left-[35vw]">
+          <div className=" h-[626px] bg-black position absolute top-[150px] left-[35vw] z-1">
             <div className="px-[15vw] flex-col ">
               <div className=" text-[56px] pt-20  w-[560px] text-[#00D8EA] font-bold">
                 <h1>「我們明明寫了那麼多內容，為什麼客戶還是搞不懂？」</h1>
