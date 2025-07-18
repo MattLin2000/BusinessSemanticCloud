@@ -2,12 +2,14 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="text-white flex justify-center items-center flex-col gap-2">
+    <div className="text-white flex justify-center items-center flex-col gap-4 sm:gap-6 ">
       <div className="text-center">
-        <h1 className="text-[38px] ">Contact</h1>
-        <p className="text-[16px] font-sans">Like what you see? Get in touch to learn more.</p>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl ">Contact</h1>
+        <p className="text-sm sm:text-base md:text-lg font-bold">
+          Like what you see? Get in touch to learn more.
+        </p>
       </div>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row gap-6 sm:gap-8 w-full max-w-4xl">
         <div className="p-5">
           <div className="p-2 flex flex-col">
             <label htmlFor="FirstName">FirstName</label>
@@ -40,15 +42,16 @@ const Contact = () => {
             />{' '}
           </div>
         </div>
-        <div className="p-5 flex-col flex">
+        <div className="p-5 flex-col flex w-full">
           <h1 className="p-2">Message</h1>
           <textarea
             id="Message"
             name="Message"
-            className="p-1 border border-white w-[316px] h-[197px] resize-none"
-          ></textarea>
+            className="w-full h-32 sm:h-40 md:h-48 border border-gray-300 bg-transparent text-white p-2 focus:outline-none focus:border-[#00E8DA] resize-none"
+            placeholder="Type your message here"
+          />
           <div className=" flex justify-end mt-6">
-            <button className="text-[15px] border-1 border-[#00E8DA] bg-[#00E8DA] text-black py-1.5 px-15 hover:bg-black hover:text-[#00E8DA] hover:cursor-pointer transition-all duration-300">
+            <button className="text-sm sm:text-base border-1 border-[#00E8DA] bg-[#00E8DA] text-black py-1.5 px-15 hover:bg-black hover:text-[#00E8DA] hover:cursor-pointer  transition-all duration-300 ">
               Send
             </button>
           </div>

@@ -4,17 +4,17 @@ const Hero = () => {
   return (
     <div>
       <div className="text-white  bg-[#333333CC]  min-h-[850px]">
-        <div className="position  relative p-20">
-          <div className="w-[60vw] h-[362px] bg-[#333333CC] flex items-center justify-center ">
+        <div className="md:position  md:relative md:p-20">
+          <div className="w-full md:w-[60vw] h-[362px] bg-[#333333CC] flex items-center justify-center ">
             <img src="/images/work1.webp" alt="展示圖片" className="w-full h-full object-cover" />
           </div>
 
-          <div className=" h-[626px] bg-black position absolute top-[150px] left-[35vw] z-1">
+          <div className=" h-[626px] bg-black md:position md:absolute md:top-[150px] md:left-[35vw] z-1">
             <div className="px-[15vw] flex-col ">
-              <div className=" text-[56px] pt-20  w-[560px] text-[#00D8EA] font-bold">
+              <div className=" text-2xl md:text-5xl pt-20  md:w-[560px] text-[#00D8EA] font-bold">
                 <h1>「我們明明寫了那麼多內容，為什麼客戶還是搞不懂？」</h1>
               </div>
-              <div className="text-16px font-bold w-[560px] py-6">
+              <div className="text-16px font-bold md:w-[560px] py-6">
                 <p>這是多數高知識產業的共同困境。</p>
                 <p>你有詳盡的服務說明、技術文章、FAQ 回覆，但潛在客戶卻在第一秒就流失，</p>
                 <p className="text-[#00D8EA]">

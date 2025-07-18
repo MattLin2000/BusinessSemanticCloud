@@ -5,12 +5,12 @@ const Hero = () => {
     <div className="flex flex-col lg:flex-row justify-center items-start text-white py-20 ">
       {/* 左側標語區塊 */}
       <div className="md:px-20 md:max-w-[560px]">
-        <h1 className="text-[48px] font-bold leading-tight max-w-[400px]">
+        <h1 className=" text-4xl md:text-5xl font-bold leading-tight md:max-w-[400px]">
           為什麼導入智能內容系統，
           <br />
           <span className="text-[#00D8EA]">已成為轉單關鍵？</span>
         </h1>
-        <p className="text-[16px] font-medium leading-[1.8em] py-6 max-w-[400px]">
+        <p className="text-2xl font-medium leading-[1.8em] py-6 md:max-w-[400px]">
           多數企業都有豐富的產品說明、客服話術與服務資料，卻總是無法真正「讓客戶看見」。
           網站訪客提問重複、潛在客戶無人追蹤、內容曝光卻沒有轉換…… <br />
           我們整合 <strong>SLM × RAG</strong>{' '}
@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
 
       {/* 右側三步驟區塊 */}
-      <div className="block md:flex flex-1  flex-col space-y-10 md:max-w-[500px]  md:px-15">
+      <div className="block md:mt-[15vh] md:flex flex-1  flex-col space-y-10 md:max-w-[500px]  md:px-15">
         {/* Step 1 */}
         <div>
           <h2 className="text-[28px] font-bold">1｜內部知識部署（SLM 部署）</h2>

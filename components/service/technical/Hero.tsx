@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="flex justify-center py-10">
       <div className="text-white flex flex-col text-start justify-start items-start  max-w-3xl ">
         <h1 className="text-[56px] pb-10 font-bold ">核心技術</h1>
-        <p className="text-[16px]">
+        <p className="hidden md:block text-[16px]">
           This is your Services Page. It's a great opportunity to provide information about the
           services you provide. Double click on the text box to start editing your content and make
           sure to add all the relevant details you want to share with site visitors. Whether you're

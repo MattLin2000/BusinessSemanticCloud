@@ -12,7 +12,7 @@ const Chat = () => {
       const input = e.target as HTMLInputElement;
       const sendedMessage = input.value;
       setMessageList(prevMessages => [...prevMessages, { type: 'user', content: sendedMessage }]);
-      fetch('http://localhost:8080/BusinessSemanticCloud/chat/temp', {
+      fetch('http://localhost:8080/Bsc/chat/temp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -50,7 +50,9 @@ const Chat = () => {
         <img src="/svg/comments-solid.svg" alt="Headset Icon" className="w-8 h-8 m-2" />{' '}
         <h1 className="text-lg text-black mt-2">立即展開交談！</h1>{' '}
       </button>{' '}
-      <div className={`${!isOpen ? 'hidden' : ''} rounded-2xl w-[400px]  text-white m-4`}>
+      <div
+        className={`${!isOpen ? 'hidden' : ''} rounded-2xl w-[80vw] md:w-[400px]  text-white m-4`}
+      >
         <div className="flex justify-between h-[80px] bg-black rounded-t-2xl items-center px-10">
           <div>
             <h1 className="text-2xl">CFlux.tech</h1>{' '}
@@ -62,7 +64,7 @@ const Chat = () => {
             X
           </div>
         </div>
-        <div className="min-h-[45vh] bg-[rgb(51,51,51)] overflow-scroll max-h-[70vh]">
+        <div className="min-h-[45vh] bg-[rgb(51,51,51)] overflow-y-scroll max-h-[70vh]">
           <div className="flex justify-center">
             <span className="text-center rounded-4xl bg-[rgb(75,75,75)] p-1 m-1">
               May 18 , 12:28 PM
@@ -102,7 +104,7 @@ const Chat = () => {
             ))}
           <div ref={messagesEndRef} />
         </div>
-        <div className="flex min-h-15 text-black ">
+        <div className="flex min-h-15 text-black border-0 ">
           <input
             className="bg-white flex-1 rounded-b-2xl p-4 "
             placeholder="撰寫訊息..."

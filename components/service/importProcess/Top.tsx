@@ -9,7 +9,7 @@ const Top = () => {
       >
         {/* 中心區塊 */}
         <div className="absolute inset-0 flex justify-center items-center ">
-          <div className=" flex justify-center items-center bg-black text-white text-4xl w-[45vw] min-w-[500px] h-40 px-10">
+          <div className=" flex justify-center items-center bg-black text-white text-4xl  w-[75vw] md:w-[45vw] md:min-w-[500px] h-40 md:px-10">
             <h1 className="w-100">​導入流程</h1>
           </div>
           <div className="hidden md:flex justify-center items-center bg-black text-white text-md w-[45vw] h-40 px-10 ">
